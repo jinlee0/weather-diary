@@ -1,0 +1,11 @@
+spring:
+  config:
+    import:
+      - openweathermap-secret.yml
+      - database-secret.yml
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+logging:
+  config: classpath:logback-spring.xml
+
